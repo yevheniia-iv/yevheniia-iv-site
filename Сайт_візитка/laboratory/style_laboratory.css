@@ -1,0 +1,155 @@
+/* Загальні стилі */
+body {
+    font-family: 'Bitter', serif;
+    margin: 0 ;
+    padding: 0;
+    scrollbar-color:#4C2818 #4C2818;
+}
+
+.container {
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+    background:#ffffff;
+    /*border: 1px #131410 solid;*/
+}
+
+/* Стилі для навігації */
+nav ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    background-color: #D5AA72;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+nav li {
+    margin: 0 ; 
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4C2818;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Стилі для заголовка */
+header {
+    text-align: center;
+    background:#F5F6ED;
+    height:250px;
+    margin: 0;
+    padding: 0;
+    border: 1px #F5F6ED solid;  
+}
+.me_header{
+    height:100px;
+}
+
+header h1 {
+    font-size:56px;
+    color: #4C2818;
+    font-weight:bold ;                 
+    letter-spacing:normal;
+    
+}
+
+header h2 {
+    font-size:36px;
+    color: #A66A2C;
+    
+    
+}
+.header_h1{
+    margin:50px;
+}
+.header_h2{
+    margin:-30px;
+}
+
+/* Стилі для блоків */
+.laboratory{
+    padding: 40px 0;
+    text-align: center;
+    margin: 0 ;
+}
+
+.laboratory h2 {
+    font-size: 24px;
+}
+/* Стилі для блоків PR_LR*/
+.laboratory-container {
+    display: flex;
+    margin-top:-50px;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+    scrollbar-color:#4C2818 #4C2818;
+
+}
+.block_lb{
+    flex: 0 0 auto;
+    width:300px; 
+    padding:50px;
+    margin:50px; 
+    background-color:#D5AA72;
+    text-align: center;
+    border-radius:20px;
+}
+
+        /* Стилі для кнопок */
+.button{
+    margin-top:20px;
+    margin-bottom:-70px;
+    background:#131410;
+    color:#F5F6ED;
+    border-radius:100px;
+    width: 100px;
+    height:50px;
+}
+
+
+/* Стилі для футера */
+footer {
+    background: #ffffff;
+    color: #131410;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+.footer_nav li {
+    margin: 0 10px;
+}
+
+.footer_nav a {
+    text-decoration: none;
+    color: #131410;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #131410;
+    margin: 5px;
+}
+
+.social-img {
+    max-width: 100px;
+    vertical-align: middle; 
+}
+.social-img_em{
+    max-width: 100px;
+    vertical-align: middle; 
+    margin-top: -4px;
+}
+
+
