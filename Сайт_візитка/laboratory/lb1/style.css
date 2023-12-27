@@ -1,0 +1,44 @@
+body{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 30px;
+    background: #F4F3EE;
+    
+}
+.vidr{
+    width:150px;
+    height:50px;
+    margin-left:185px;
+    background: #EEA988;
+    border-radius: 40px;
+    border: 2px #EEA988 solid;
+    color: #F4F3EE;
+    font-size: 18px;
+    
+}
+.container{
+    background:#F8E4BE;
+    margin: 70px 450px;
+    width: 600px;
+    border-radius: 20px;
+    
+}
+form{
+    margin: 20px;
+    padding: 20px;
+}
+.forma{
+    border-radius: 40px;
+    border: 3px #C8A796 solid;
+    padding:20px;
+    margin: 10px 110px;
+    width: 250px;
+}
+input[type="submit"]:active{
+    background:#6A3F36;
+    border: 1px #6A3F36 solid;
+}
+input[type="forms"]:focus{
+    border: 4px #6A3F36 solid;
+    outline: #6A3F36 ;
+   
+}

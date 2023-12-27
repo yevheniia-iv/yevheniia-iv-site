@@ -1,0 +1,74 @@
+/*моє*/
+body{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+   
+    
+}
+li, a{
+    list-style: none ;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+header, .container, section, footer{
+    margin: 0 auto;
+    width: 1200px;
+    
+}
+
+/*1.Виділіть перший елемент li та надайте йому жирний шрифт*/
+li:first-child {
+    font-weight: bold;
+}
+/*2.Виберіть усі елементи a >>, які є останніми дочірніми елементами свого батька, і пофарбуйте їх у червоний колір*/
+a:last-child {
+    color:#441f0b;
+}
+/*Виберіть усі елементи input , які вимкнено disabled )), і надайте їм сірий фоновий
+колір.*/
+input[disabled] {
+    background-color:#e8cba8;
+}
+/*Виберіть усі елементи p >>, які є прямими дочірніми елементами елемен та div >>, і
+надайте їм напівжирний шрифт*/
+div > p {
+    font-weight: bold;
+}
+
+a[href^="https"] {
+    color:#9f5125;
+}
+input[type="text"] {
+    border: 1px solid #441f0b;
+}
+li:first-child,
+li:last-child {
+    font-size:24px;
+}
+div p {
+    font-size: 16px;
+}
+input:checked {
+    background-color:#9f5125;
+}
+li > a {
+    text-decoration: underline;
+}
+li:nth-child(even) {
+    font-weight: bold;
+}
+input[type="text"]:not([disabled]) {
+    background-color: #e7e9e9;
+}
+*:first-child > p {
+    font-size: 24px;
+}
+.special + li {
+    text-decoration: line-through;
+}
+p::first-letter {
+    font-size: 36px;
+}
+a::after {
+    content: " (посилання)";
+}
