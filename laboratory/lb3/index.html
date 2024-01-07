@@ -1,61 +1,190 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <title>Flexbox Layout</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="comp.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@200&display=swap" rel="stylesheet">
+  <title>Лабораторна робота №2</title>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="small-block-container">
-                <div class="small-block">
-                    <button><img src="icon1.png" alt="Icon 1"></button>
-                    <button><img src="icon2.png" alt="Icon 2"></button>
-                    <button><img src="icon3.png" alt="Icon 3"></button>
-                    <button><img src="icon4.png" alt="Icon 4"></button>
-                </div>
-                <div class="small-block">
-                    <button><img src="icon5.png" alt="Icon 5"></button>
-                    <button><img src="icon6.png" alt="Icon 6"></button>
-                    <button><img src="icon7.png" alt="Icon 7"></button>
-                    <button><img src="icon8.png" alt="Icon 8"></button>
-                </div>
-                <div class="small-block">
-                    <button><img src="icon9.png" alt="Icon 9"></button>
-                    <button><img src="icon10.png" alt="Icon 10"></button>
-                    <button><img src="icon11.png" alt="Icon 11"></button>
-                    <button><img src="icon12.png" alt="Icon 12"></button>
-                </div>
-            </div>
-            <!-- Інші блоки бокового блоку -->
-        </div>
-        <div class="horizontal-buttons">
-            <button>Кнопка 1</button>
-            <button>Кнопка 2</button>
-            <button>Кнопка 3</button>
-            <button>Кнопка 4</button>
-            <button>Кнопка 5</button>
-            <button>Кнопка 6</button>
-            <button>Кнопка 7</button>
-            <button>Кнопка 8</button>
-            <button>Кнопка 9</button>
-        </div>
-        <div class="large-block">
-            <div class="photo-block">
-                <img src="photo1.jpg" alt="Photo 1">
-                <div class="title">Заголовок 1</div>
-                <div class="subtitle">Підтекст 1</div>
-            </div>
-            <div class="photo-block">
-                <img src="photo2.jpg" alt="Photo 2">
-                <div class="title">Заголовок 2</div>
-                <div class="subtitle">Підтекст 2</div>
-            </div>
-            <!-- Додайте інші блоки за аналогією -->
-        </div>
+  <header class="header">
+    <div class="logo left">
+      <i id="menu" class="material-icons">menu</i>
+      <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png" alt="YouTube Logo" />
     </div>
+
+    <div class="search center">
+      <form action="">
+        <input type="text" placeholder="Search" />
+        <button><i class="material-icons">search</i></button>
+      </form>
+      <i class="material-icons mic">mic</i>
+    </div>
+
+    <div class="icons right">
+      <i class="material-icons">videocam</i>
+      <i class="material-icons">apps</i>
+      <i class="material-icons">notifications</i>
+      <i class="material-icons display-this">account_circle</i>
+    </div>
+  </header>
+
+  <main>
+    <div class="side-bar">
+            <div class="nav">
+                <a href="#" class="nav-link active">
+                    <i class="material-icons">home</i>
+                    <span>Головна</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>У тренді</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Підписки</span>
+                </a>
+                <hr>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Бібліотека</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">history</i>
+                    <span>Історія перегляду</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Ваші відео</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">watch_later</i>
+                    <span>Дивитись пізніше</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Уподобані відео</span>
+                </a>
+            </div>     
+        </div>
+      
+   
+<div class="videos">
+    <section class="video-section">
+        <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/Sl5YyxROhhM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9XY_Tdo2_G9wc2IKeKe9UCUpPhQ" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/G4oZUhcD1UQ_wTn-2nxzS4E2S4GTTU5vSzT7sXhe9caQW2WuzKMFaqoNwYh-oOClBx9Zig7Z8w=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">ОЛЕКСІЙ ДУРНЄВ в КЛУБІ ДИЛЕТАНТІВ #29</a>
+                    <a href="#" class="video-channel-name">ЛЕВИ НА ДЖИПІ</a>
+                    <div class="video-metadata">
+                        <span>1,4 млн. переглядів</span>
+                        •
+                        <span>5 місяців тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/y89uz1_mNcw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBP-3uJukOea4fj417BaW50E64dWA" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/7_UXNI6YD5FyikfUOY2V4gosx7Pu_7ZygDbd4eQcTwW6NlPUNBa8qwvrHpZixAzf2SO1ArJ1=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">МУЛЬТИТРЕК: Parfeniuk vs MAYOROVA | ведучі Даша Кубік та Володимир Дантес | випуск 2</a>
+                    <a href="#" class="video-channel-name">
+                        МУЛЬТИТРЕК</a>
+                    <div class="video-metadata">
+                        <span>166 тис. переглядів</span>
+                        •
+                        <span>2 тижні тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/8i_MNdwCM5c/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCYa6NJj_YU49TkPMfjo-EATdiFHw" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/G4oZUhcD1UQ_wTn-2nxzS4E2S4GTTU5vSzT7sXhe9caQW2WuzKMFaqoNwYh-oOClBx9Zig7Z8w=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">Щербан, Кубік, Міхієнко, Зирянов, Лузан в КЛУБІ ДИЛЕТАНТІВ #21</a>
+                    <a href="#" class="video-channel-name">
+                        ЛЕВИ НА ДЖИПІ</a>
+                    <div class="video-metadata">
+                        <span>2,4 млн. переглядів</span>
+                        •
+                        <span> 1 рік тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/fHXJx6kOaMM/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDvrjt6R-GpLF0gcMEG3AQYKsl39w" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/WtYMVibuzb_cGUyDOaqPGliCxytVWfnWXA6pYiTOoK7Q8WQDWEjL3anifBD-MesvcOMtowynAXw=s88-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">Дорофєєва придбала у нас трек ! Даша Майорова та Даша Кубік пишуть музикуУэнсдей Аддамс! Экстремальное преображение комнаты подружек!</a>
+                    <a href="#" class="video-channel-name">MAYOROVA</a>
+                    <div class="video-metadata">
+                        <span>122 тис. переглядів</span>
+                        •
+                        <span>2 місяці тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>
+              <article class="video-container">
+            <a href="#" class="thumbnail">
+                <img class="thumbnail-image" src="https://i.ytimg.com/vi/n61ULEU7CO0/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLABgYZhkqacI3o5_Pa56YPXWQbhRg" />
+            </a>
+            <div class="video-bottom-section">
+                <a href="">
+                    <img class="channel-icon" src="https://yt3.ggpht.com/k9GnTpQufVqv_YafCZPzGprXXEWtcAOgRW7ztiEFWxuv7v-jpPP5eI6ZduxRP0slRB9xebgAnwA=s68-c-k-c0x00ffffff-no-rj" />
+                </a>
+                <div class="video-details">
+                    <a href="#" class="video-tetle">Best of lofi hip hop 2021 ✨ [beats to relax/study to]</a>
+                    <a href="#" class="video-channel-name">Lofi Girl</a>
+                    <div class="video-metadata">
+                        <span>31 млн. переглядів</span>
+                        •
+                        <span>2 роки тому</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+       </article>   
+             </div>
+            </div>
+          </div>
+        </article>
+    </section>
+</div>
+    <div class="content"></div>
+  </main>
 </body>
 </html>

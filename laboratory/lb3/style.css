@@ -1,106 +1,327 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
+
+body {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 15px;
+}
+
+
+hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+  text-decoration: none;
+}
+
+.nav-link span {
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  background: #e5e5e5;
+  cursor: pointer;
+}
+
+.active {
+  background: #e5e5e5;
+}
+
+
+
+.main {
+  display: flex;
+}
+
+
+.video{
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.video-section {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start; 
+  margin: 15px;
+  flex-wrap: nowrap;
+}
+  
+.video-container .thumb{
+  width: 100%;
+  border-radius: 2%;
+}
+
+.video-container .flex-box img{
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.video-container .flex-box{
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+/**/
+
+.video-details {
+  font-size: 14px;
+  color: #6a6a6a;
+}
+
+.video-details {
+  font-weight: 600;
+  display: block;
+}
+  
+  .thumbnail {
+    position: relative;
+    display: flex;
+  }
+  
+
+
+  .thumbnail-image{
+    width: 100%;
+    height: 89%;
+    object-fit: cover;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #AAA;
+  }
+
+  .video-bottom-section{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .channel-icon{
+    margin-right: .75rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #AAA;
+  }
+
+  .video-details{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .video-channel-name{
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+  }
+
+  .video-channel-name:hover{
+    color: #111;
+  }
+
+  .video-channel-name,.vide-metadata{
+    color: #555;
+  }
+
+.video-section-title{
+    grid-column: 1 /-1;
+    margin: -.5rem 0;
     display: flex;
     justify-content: space-between;
-    border: 10px darkblue solid;
-    width: 100px;
-    height: 200px;
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-.small-block-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.small-block {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.small-block button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 5px;
-}
-
-.search-bar {
-    display: flex;
     align-items: center;
-    margin: 20px;
+    padding: 0 .5rem;
 }
 
-.search-bar input {
-    flex-grow: 1;
-    padding: 10px;
-}
-
-#voice-icon {
-    margin-right: 10px;
-    background-color: #2ecc71;
-    color: #fff;
+.video-section-title-close{
     border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
+    background: none;
+    padding: 0;
+    font-size: 2rem;
+    color: #555;
+    cursor : pointer;
 }
 
-.circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-    margin-right: 5px;
+.search {
+  display: flex;
 }
 
-.horizontal-buttons {
+.search form {
+  display: flex;
+  border: 1px solid #ddd;
+  height: 45px;
+}
+
+
+.side-bar {
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left #menu {
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+
+.search input {
+  width: 600px;
+  padding: 10px;
+  border: 0;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
+}
+.details{
+  display: flex;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+}
+
+
+input:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+
+.search button {
+  height: 100%;
+  width: 60px;
+  border: none;
+}
+
+
+.mic {
+  margin-top: 10px;
+}
+
+
+.material-icons {
+  color: rgb(100, 100, 100);
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+main{
+  height: calc(100vh - 70px);
+  display: flex;
+  background: #f9f9f9;
+}
+
+ @media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+    .search {
+      display: none;
+    }
+   .main {
+    flex-direction: column; 
+  }
+
+  .videos {
+    justify-content: flex-start; 
+  }
+}
+
+  @media (max-width: 900px) {
+    .search input {
+      width: 25rem;
+    }
+  }
+  body {
+    margin: 0; 
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto 1fr; 
+    height: 100vh; 
+}
+
+.header {
+    
+    grid-column: 1;
+    z-index: 1; 
+}
+
+.main {
+    
+    grid-column: 1;
+    overflow-y: scroll;
+}
+
+.video-section {
     display: flex;
-    margin: 20px;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: flex-start; 
+    margin: 15px -28cm -24cm auto; 
 }
 
-.horizontal-buttons button {
-    margin-right: 10px;
-    background-color: #e74c3c;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.large-block {
+.video-container {
+    box-sizing: border-box;
+    width: calc(20% - 20px); 
+    max-width: 300px; 
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.photo-block {
-    width: 200px;
-    margin: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.subtitle {
-    color: gray;
+    flex-direction: column;
+    align-items: flex-start; 
 }
